@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Counter Application</string>
+    <string name="init_cnt_value">0</string>
+    <string name="click_me">Click Me!</string>
+</resources>
