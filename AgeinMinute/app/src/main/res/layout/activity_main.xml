@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@color/Ghost_White">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_heading"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_heading"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/lite_green"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/third_heading"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/dark_green"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/dd_mm_yyyy"
+        android:textColor="#006064"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/min_init"
+        android:textColor="#2E7D32"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>
