@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".MainActivity"
-    android:background="@color/Ghost_White">
+    android:background="@color/Ghost_White"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,16 +49,17 @@
         />
 
     <TextView
+        android:id="@+id/selectdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/dd_mm_yyyy"
         android:textColor="#006064"
         android:textSize="15sp"
-
         />
 
     <TextView
+        android:id="@+id/calculatedmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
