@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 val intent=Intent(this, QuestionActivity::class.java)
+                intent.putExtra(Constants.USERNAME, etname.text.toString())
                 startActivity(intent)
                 finish()
             }
@@ -28,3 +29,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+

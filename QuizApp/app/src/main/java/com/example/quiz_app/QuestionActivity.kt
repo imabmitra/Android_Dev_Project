@@ -20,8 +20,8 @@ class QuestionActivity : AppCompatActivity() {
     var submit:Button?=null
     var progress_bar:ProgressBar?=null
     var progress_text:TextView?=null
+    var uname:String?=null
     var num_correct_ans=0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
@@ -34,6 +34,8 @@ class QuestionActivity : AppCompatActivity() {
         submit=findViewById(R.id.btn_submit)
         progress_bar=findViewById(R.id.prog_bar)
         progress_text=findViewById(R.id.prog_text)
+        uname=intent.getStringExtra(Constants.USERNAME)
+
 //        Log.v("Number of Question", Constants.getQuestion()[0].optionOne)
         set_question(0)
     }
@@ -111,10 +113,11 @@ class QuestionActivity : AppCompatActivity() {
             }
             else if (submitflag==false){
                 if(qno<quiz_array.size){
-                submit?.text="Submit"
+                submit?.text="Next Question"
                 }
                 else{
                 submit?.text="Finish"
+                finish_quiz(quiz_array.size)
                 }
                 correct_option?.setBackgroundColor(Color.parseColor("#0F9D58"))
                 correct_option?.setTextColor(Color.parseColor("#FFFFFF"))
@@ -127,16 +130,20 @@ class QuestionActivity : AppCompatActivity() {
                     num_correct_ans+=1
                 }
 
-                if(qno==quiz_array.size){
-//                    Log.v("Correct Answer","${num_correct_ans}")
-                    val intant =Intent(this,ResultActivity::class.java)
-                    startActivity((intant))
-                    finish()
-                }
 
             }
             submitflag=true
             }
 
+    }
+    private  fun finish_quiz(qzlength:Int){
+        submit?.setOnClickListener {
+            val intant = Intent(this, ResultActivity::class.java)
+            intant.putExtra(Constants.USERNAME,uname)
+            intant.putExtra(Constants.CORRECT_ANS,num_correct_ans)
+            intant.putExtra(Constants.TOTAL_QUIZ,qzlength)
+            startActivity(intant)
+            finish()
+        }
     }
 }
