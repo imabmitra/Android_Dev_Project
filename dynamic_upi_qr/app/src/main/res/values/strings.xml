@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dynamic UPI QR</string>
+    <string name="qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your info</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+
+    <string name="please_enter_valid_upi_id">Please enter valid UPI ID</string>
+    <string name="enter_amount_in_inr">Enter Amount in INR</string>
+    <string name="generate_qr">Generate QR</string>
+</resources>
