@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <com.example.kidsdrawingapp.DrawingView
+     android:layout_margin="10dp"
+     android:background="@color/white"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:id="@+id/drawing_view"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:gravity="center" >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#E40F0F"
+      android:background="@drawable/penbackground"
+      android:layout_margin="2dp"
+      android:id="@+id/red"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/black"
+      android:background="@drawable/penbackground"
+      android:layout_margin="2dp"
+      android:id="@+id/black"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#4CAF50"
+      android:background="@drawable/penbackground"
+      android:layout_margin="2dp"
+      android:id="@+id/green"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#FFEB3B"
+      android:background="@drawable/penbackground"
+      android:layout_margin="2dp"
+      android:id="@+id/yellow"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#2196F3"
+      android:background="@drawable/penbackground"
+      android:layout_margin="2dp"
+      android:id="@+id/blue"
+      />
+
+  <ImageButton
+      android:id="@+id/Eraser"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:backgroundTint="@color/white"
+      android:src="@drawable/eraser" />
+
+  <ImageButton
+      android:id="@+id/undo"
+      android:layout_width="62dp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ic_undo"
+      android:text="@string/undo" />
+
+ </LinearLayout>
+
+</LinearLayout>
