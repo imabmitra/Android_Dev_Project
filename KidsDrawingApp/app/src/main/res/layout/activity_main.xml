@@ -52,14 +52,14 @@
       android:layout_margin="2dp"
       android:id="@+id/yellow"
       />
+
   <TextView
+      android:id="@+id/blue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:backgroundTint="#2196F3"
-      android:background="@drawable/penbackground"
       android:layout_margin="2dp"
-      android:id="@+id/blue"
-      />
+      android:background="@drawable/penbackground"
+      android:backgroundTint="#00BCD4" />
 
   <ImageButton
       android:id="@+id/Eraser"
